@@ -1,0 +1,23 @@
+{
+  "name": "sky_tracker_website",
+  "version": "1.0.0",
+  "description": "Webshop for the sky tracker device",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyasan/sky_tracker_website.git"
+  },
+  "author": "Laszlo Bulatko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polyasan/sky_tracker_website/issues"
+  },
+  "homepage": "https://github.com/polyasan/sky_tracker_website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
