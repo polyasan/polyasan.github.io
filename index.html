@@ -29,13 +29,16 @@
           ><i class="fa fa-bars"></i
         ></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#galery" class="w3-bar-item w3-button w3-padding-large"
+          >GALERY</a
+        >
         <a
-          href="/trinagulum.html"
+          href="#triangulum"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >TRIANGULUM ASTRO</a
         >
         <a
-          href="/accessories.html"
+          href="#accessories"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >ACCESSORIES</a
         >
@@ -59,27 +62,39 @@
       style="margin-top: 46px"
     >
       <a
-        href="/trinagulum.html"
+        href="#galery"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >TRIANGULUM ASTRO</a
       >
       <a
-        href="/accessories.html"
+        href="#trinagulum"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >TRIANGULUM ASTRO</a
+      >
+      <a
+        href="#accessories"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >ACCESSORIES</a
       >
       <a
-        href="/index.html#contact"
+        href="#contact"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >CONTACT</a
       >
+      <a
+        href="/checkout.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >CART</a
+      >
     </div>
 
     <!-- Page content -->
-    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+    <div class="w3-content w3-light-gray" style="max-width: 2000px; margin-top: 46px">
       <!-- Automatic Slideshow Images -->
       <div class="mySlides w3-display-container w3-center">
         <img src="/images/FB_IMG_1605350897091.jpg" style="width: 100%" />
@@ -168,7 +183,7 @@
       </div>
 
       <!-- The Tour Section -->
-      <div class="w3-black" id="tour">
+      <div class="w3-black" id="galery">
         <div
           class="w3-container w3-content w3-padding-64"
           style="max-width: 800px"
@@ -191,7 +206,85 @@
         class="w3-image w3-greyscale-min"
         style="width: 100%"
       />
+      <!-- Triangulum buy page-->
+      <div class="w3-black" id="triangulum">
+        <div
+          class="w3-container w3-content w3-padding-64"
+          style="max-width: 100%; min-height: 750px"
+        >
+          <h2 class="w3-wide w3-center">TRIANGULUM ASTRO</h2>
+          <br />
 
+          <div class="w3-container w3-content" style="max-width: 800px">
+            <div class="w3-display-container">
+              <img
+                src="/images/FB_IMG_1605350901029.jpg"
+                class="w3-hover-opacity"
+                style="width: 100%"
+              />
+            </div>
+            <button class="w3-button w3-margin-top w3-red w3-right">
+              Add to cart <i class="fa fa-shopping-cart"></i>
+            </button>
+            <p>Trinagulum astro<br /><b>$1999.99</b></p>
+          </div>
+        </div>
+      </div>
+      <!-- Accessories section -->
+      <div class="w3-black" id="accessories">
+        <div
+          class="w3-container w3-content w3-padding-64"
+          style="max-width: 100%; min-height: 750px"
+        >
+          <h2 class="w3-wide w3-center">ACCESSORIES</h2>
+          <p class="w3-opacity w3-center">
+            <i>Buy the accessories here</i>
+          </p>
+          <br />
+
+          <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img
+                  src="/images/tracker1.jpg"
+                  class="w3-hover-opacity"
+                  style="width: 100%"
+                />
+              </div>
+              <button class="w3-button w3-margin-top w3-red w3-right">
+                Add to cart <i class="fa fa-shopping-cart"></i>
+              </button>
+              <p>Remote controller<br /><b>$19.99</b></p>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img
+                  src="/images/tracker2.jpg"
+                  class="w3-hover-opacity"
+                  style="width: 100%"
+                />
+              </div>
+              <button class="w3-button w3-margin-top w3-red w3-right">
+                Add to cart <i class="fa fa-shopping-cart"></i>
+              </button>
+              <p>Power supply<br /><b>$19.99</b></p>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+              <div class="w3-display-container">
+                <img
+                  src="/images/tracker3.jpg"
+                  class="w3-hover-opacity"
+                  style="width: 100%"
+                />
+              </div>
+              <button class="w3-button w3-margin-top w3-red w3-right">
+                Add to cart <i class="fa fa-shopping-cart"></i>
+              </button>
+              <p>Transfer box<br /><b>$19.99</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- The Contact Section -->
       <div
         class="w3-container w3-content w3-padding-64"
