@@ -32,9 +32,7 @@
         <a href="/index.html" class="w3-bar-item w3-button w3-padding-large"
           >HOME</a
         >
-        <a
-          href="/index.html#galery"
-          class="w3-bar-item w3-button w3-padding-large"
+        <a href="/index.html#galery" class="w3-bar-item w3-button w3-padding-large"
           >GALERY</a
         >
         <a
@@ -58,7 +56,7 @@
           >CONTACT</a
         >
         <a
-          href="/cart.html"
+          href="#"
           class="w3-padding-large w3-hover-red w3-hide-small w3-right"
           ><i class="fa fa-shopping-cart" aria-hidden="true"></i
         ></a>
@@ -71,7 +69,7 @@
       class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
       style="margin-top: 46px"
     >
-      <a
+    <a
         href="/index.html#galery"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
@@ -102,7 +100,7 @@
         >CONTACT</a
       >
       <a
-        href="/index.html#contact"
+        href="/cart.html"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >CART</a
@@ -115,75 +113,73 @@
           class="w3-container w3-content w3-padding-64"
           style="max-width: 100%"
         >
-          <h2 class="w3-wide w3-center">CHECKOUT</h2>
+          <h2 class="w3-wide w3-center">THE SHOPPING CART</h2>
           <p class="w3-opacity w3-center">
-            <i>Give your shipping and payment details</i>
+            <i>There are no elements in the cart</i>
           </p>
           <br />
-          <div class="w3-container w3-content" style="min-height: 500px">
-            <div class="w3-container">
-              <div class="w3-half w3-padding-32">
-                <i>Personal details</i>
-                <form class="w3-container">
-                  <label>First Name</label>
-                  <input class="w3-input" type="text" />
-                  <label>Last Name</label>
-                  <input class="w3-input" type="text" />
-                  <label>e-mail</label>
-                  <input class="w3-input" type="text" />
-                  <label>Phone</label>
-                  <input class="w3-input" type="tel" />
-                </form>
-              </div>
-              <div class="w3-half w3-padding-32">
-                <i>Shipping details</i>
-                <form class="w3-container">
-                  <label>Address</label>
-                  <input class="w3-input" type="text" />
-                  <label>City</label>
-                  <input class="w3-input" type="text" />
-                  <label>Post code</label>
-                  <input class="w3-input" type="text" />
-                  <label>Country</label>
-                  <select id="countries" class="w3-select" name="option">
-                    <option value="" disabled selected>
-                      Choose your country
-                    </option>
-                  </select>
-                </form>
-              </div>
-            </div>
-            <div class="w3-container">
-              <form class="w3-half">
-                <i>Payment options</i>
-                <p></p>
-                <input
-                  id="online"
-                  class="w3-radio"
-                  type="radio"
-                  name="online"
-                  value="online"
-                  checked=""
+          <div
+            class="w3-container w3-content"
+            style="max-width: 800px; min-height: 500px"
+          >
+            <div class="w3-display-right"></div>
+            <div class="w3-display-left"></div>
+            <ul class="w3-ul w3-light-gray w3-card-4">
+              <li class="w3-bar">
+                <span
+                  onclick="this.parentElement.style.display='none'"
+                  class="w3-bar-item w3-button w3-xlarge w3-right"
+                  >&times;</span
+                >
+                <img
+                  src="/images/tracker1.jpg"
+                  class="w3-bar-item w3-circle"
+                  style="width: 85px"
                 />
-                <label>Online payment</label>
-                <p>
-                  <input
-                    id="online"
-                    class="w3-radio"
-                    type="radio"
-                    name="online"
-                    value="bank"
-                    checked=""
-                  />
-                  <label>Bank transfer</label>
-                </p>
-              </form>
-              <div class="w3-half">
-                <p class="w3-opacity w3-right">
-                  <i>Total: $2318.99</i>
-                </p>
-              </div>
-            </div>
+                <div class="w3-bar-item">
+                  <span class="w3-large">Remote controller</span><br />
+                  <span>$19.99</span>
+                </div>
+              </li>
+              <li class="w3-bar">
+                <span
+                  onclick="this.parentElement.style.display='none'"
+                  class="w3-bar-item w3-button w3-xlarge w3-right"
+                  >&times;</span
+                >
+                <img
+                  src="/images/tracker1.jpg"
+                  class="w3-bar-item w3-circle"
+                  style="width: 85px"
+                />
+                <div class="w3-bar-item">
+                  <span class="w3-large">Power supply</span><br />
+                  <span>$19.99</span>
+                </div>
+              </li>
+              <li class="w3-bar">
+                <span
+                  onclick="this.parentElement.style.display='none'"
+                  class="w3-bar-item w3-button w3-xlarge w3-right"
+                  >&times;</span
+                >
+                <img
+                  src="/images/tracker2.jpg"
+                  class="w3-bar-item w3-circle"
+                  style="width: 85px"
+                />
+                <div class="w3-bar-item">
+                  <span class="w3-large">Trinagulum astro</span><br />
+                  <span>$1999.99</span>
+                </div>
+              </li>
+            </ul>
+            <p class="w3-opacity w3-left">
+              <i>Subtotal: $2318.99</i>
+            </p>
+            <a href="/checkout.html" class="w3-button w3-margin-top w3-red w3-right">
+              Go to checkout <i class="fa fa-credit-card" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -280,6 +276,5 @@
         }
       };
     </script>
-    <script src="/countries.js"></script>
   </body>
 </html>

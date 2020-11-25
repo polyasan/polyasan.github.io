@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Sky tracker</title>
+  <title>Trinagulum Astro</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link
@@ -45,12 +46,17 @@
           >ACCESSORIES</a
         >
         <a
+          href="#manual"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >MANUAL</a
+        >
+        <a
           href="#contact"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >CONTACT</a
         >
         <a
-          href="checkout.html"
+          href="cart.html"
           class="w3-padding-large w3-hover-red w3-hide-small w3-right"
           ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a>
@@ -82,13 +88,19 @@
         >ACCESSORIES</a
       >
       <a
+        href="#manual"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >MANUAL</a
+      >
+      <a
         href="#contact"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >CONTACT</a
       >
       <a
-        href="/checkout.html"
+        href="/cart.html"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >CART</a
@@ -135,8 +147,8 @@
         style="max-width: 1000px"
         id="band"
       >
-        <h2 class="w3-wide">THE SKY TRACKER</h2>
-        <p class="w3-opacity"><i>We love music</i></p>
+        <h2 class="w3-wide">THE TRIANGULUM ASTRO</h2>
+        <p class="w3-opacity"><i>Designed for the curiosity</i></p>
         <p class="w3-justify">
           We have created a fictional band website. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -151,16 +163,20 @@
           consequat.
         </p>
         <div class="w3-row w3-padding-32">
-          <div class="w3-third">
-            <iframe width="220" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          <div class="w3-half">
+            <iframe
+              width="400"
+              height="300"
+              src="https://www.youtube.com/embed/hrTpNkVYYAU"
+            >
             </iframe>
           </div>
-          <div class="w3-third">
-            <iframe width="220" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
-          </div>
-          <div class="w3-third">
-            <iframe width="220" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          <div class="w3-half">
+            <iframe
+              width="400"
+              height="300"
+              src="https://youtube.com/embed/hrTpNkVYYAU"
+            >
             </iframe>
           </div>
         </div>
@@ -290,6 +306,47 @@
           </div>
         </div>
       </div>
+      <!-- Manual section -->
+      <div
+        class="w3-container w3-content w3-padding-64"
+        style="max-width: 800px; min-height: 700px"
+        id="manual"
+      >
+        <h2 class="w3-wide w3-center">MANUAL</h2>
+        <p class="w3-opacity w3-center">
+          <i>Download the user manual here!</i>
+        </p>
+        <div class="w3-container w3-padding-32">
+          <div class="w3-half">
+            <p class="w3-center">
+              <i>English</i>
+            </p>
+            <p class="w3-center w3-hover-red">
+              <a href="pdf/lm386.pdf"
+                ><i
+                  class="fa fa-book"
+                  style="font-size: 60px"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </p>
+          </div>
+          <div class="w3-half">
+            <p class="w3-center">
+              <i>German</i>
+            </p>
+            <p class="w3-center w3-hover-red">
+              <a href="pdf/lm386.pdf"
+                ><i
+                  class="fa fa-book"
+                  style="font-size: 60px"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
       <!-- The Contact Section -->
       <div
         class="w3-container w3-content w3-padding-64"
@@ -303,7 +360,8 @@
         <div class="w3-row w3-padding-32">
           <div class="w3-col m6 w3-large w3-margin-bottom">
             <i class="fa fa-map-marker" style="width: 30px"></i> Budapest, HU<br />
-            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
+            <i class="fa fa-phone" style="width: 30px"></i> Phone: +36 30 581
+            9524<br />
             <i class="fa fa-envelope" style="width: 30px"> </i> Email:
             triangulumastro@gmail.com<br />
           </div>
