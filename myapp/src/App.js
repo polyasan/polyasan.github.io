@@ -1,4 +1,5 @@
 import "./App.css";
+import Slideshow from "./Slideshow";
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
         class="w3-content w3-light-gray"
         style={{maxWidth: "2000px", marginTop: "46px"}}
       >
+        <Slideshow/>
         <div class="mySlides w3-display-container w3-center">
           <img alt="" src={process.env.PUBLIC_URL+"/FB_IMG_1605350897091.jpg"} style={{width: "100%"}} />
           <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">

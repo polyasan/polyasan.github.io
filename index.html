@@ -56,8 +56,10 @@
           >CONTACT</a
         >
         <a
-          href="cart.html"
+          href="#cart"
+          onclick="renderPage('cart')"
           class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><span id="badge" class="w3-badge w3-dark-gray"></span
           ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a>
       </div>
@@ -106,319 +108,514 @@
         >CART</a
       >
     </div>
-
-    <!-- Page content -->
-    <div
-      class="w3-content w3-light-gray"
-      style="max-width: 2000px; margin-top: 46px"
-    >
-      <!-- Automatic Slideshow Images -->
-      <div class="mySlides w3-display-container w3-center">
-        <img src="/images/FB_IMG_1605350897091.jpg" style="width: 100%" />
-        <div
-          class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
-        >
-          <h3>Triangulum Astro</h3>
-          <p><b>Catch the moment</b></p>
-        </div>
-      </div>
-      <div class="mySlides w3-display-container w3-center">
-        <img src="/images/FB_IMG_1605350901029.jpg" style="width: 100%" />
-        <div
-          class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
-        >
-          <h3>Look at the sky</h3>
-          <p><b>Through the atmosphere</b></p>
-        </div>
-      </div>
-      <div class="mySlides w3-display-container w3-center">
-        <img src="/images/FB_IMG_1605350904084.jpg" style="width: 100%" />
-        <div
-          class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
-        >
-          <h3>Get to know the universe</h3>
-          <p><b>And see unbelivable distances</b></p>
-        </div>
-      </div>
-
-      <!-- The Band Section -->
-      <div
-        class="w3-container w3-content w3-center w3-padding-64"
-        style="max-width: 1000px"
-        id="band"
-      >
-        <h2 class="w3-wide">THE TRIANGULUM ASTRO</h2>
-        <p class="w3-opacity"><i>Designed for the curiosity</i></p>
-        <p class="w3-justify">
-          We have created a fictional band website. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-        <div class="w3-row w3-padding-32">
-          <div class="w3-half">
-            <iframe
-              width="300"
-              height="225"
-              src="https://www.youtube.com/embed/hrTpNkVYYAU"
-            >
-            </iframe>
-          </div>
-          <div class="w3-half">
-            <iframe
-              width="300"
-              height="225"
-              src="https://youtube.com/embed/hrTpNkVYYAU"
-            >
-            </iframe>
-          </div>
-        </div>
-        <div class="w3-row w3-padding-16">
-          <div class="w3-half w3-padding-16">
-            <img src="/images/FB_IMG_1605350958962.jpg" style="width: 90%" />
-          </div>
-          <div class="w3-half">
-            <p class="w3-opacity"><i>Lorem ipsum</i></p>
-            <p class="w3-justify">
-              We have created a fictional band website. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- The Tour Section -->
-      <div class="w3-black" id="gallery">
-        <div
-          class="w3-container w3-content w3-padding-64"
-          style="max-width: 800px"
-        >
-          <h2 class="w3-wide w3-center">GALLERY</h2>
-          <p class="w3-opacity w3-center">
-            <i>Experience the infinite</i>
-          </p>
-          <br />
-
+    <div id="pages">
+      <!-- Checkout page content-->
+      <div id="checkout" style="display: none">
+        <!-- The Tour Section -->
+        <div class="w3-light-gray" id="tour">
           <div
-            class="w3-row-padding w3-padding-32"
-            style="margin: 0 -16px"
-          ></div>
-        </div>
-      </div>
-      <!-- Image of location/map -->
-      <img
-        src="/images/FB_IMG_1605350938474.jpg"
-        class="w3-image w3-greyscale-min"
-        style="width: 100%"
-      />
-      <!-- Triangulum buy page-->
-      <div class="w3-black" id="triangulum">
-        <div
-          class="w3-container w3-content w3-padding-64"
-          style="max-width: 100%; min-height: 750px"
-        >
-          <h2 class="w3-wide w3-center">TRIANGULUM ASTRO</h2>
-          <br />
-
-          <div class="w3-container w3-content" style="max-width: 800px">
-            <div class="w3-display-container">
-              <img
-                src="/images/FB_IMG_1605350901029.jpg"
-                class="w3-hover-opacity"
-                style="width: 100%"
-              />
-            </div>
-            <button class="w3-button w3-margin-top w3-red w3-right">
-              Add to cart <i class="fa fa-shopping-cart"></i>
-            </button>
-            <p>Trinagulum astro<br /><b>$1999.99</b></p>
-          </div>
-        </div>
-      </div>
-      <!-- Accessories section -->
-      <div class="w3-black" id="accessories">
-        <div
-          class="w3-container w3-content w3-padding-64"
-          style="max-width: 100%; min-height: 750px"
-        >
-          <h2 class="w3-wide w3-center">ACCESSORIES</h2>
-          <p class="w3-opacity w3-center">
-            <i>Buy the accessories here</i>
-          </p>
-          <br />
-
-          <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
-            <div class="w3-third w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="/images/tracker1.jpg"
-                  class="w3-hover-opacity"
-                  style="width: 100%"
-                />
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 100%"
+          >
+            <h2 class="w3-wide w3-center">CHECKOUT</h2>
+            <p class="w3-opacity w3-center">
+              <i>Give your shipping and payment details</i>
+            </p>
+            <br />
+            <div class="w3-container w3-content" style="min-height: 500px">
+              <div class="w3-container">
+                <div class="w3-half w3-padding-32">
+                  <i>Personal details</i>
+                  <form class="w3-container">
+                    <label>First Name</label>
+                    <input class="w3-input" type="text" />
+                    <label>Last Name</label>
+                    <input class="w3-input" type="text" />
+                    <label>e-mail</label>
+                    <input class="w3-input" type="text" />
+                    <label>Phone</label>
+                    <input class="w3-input" type="tel" />
+                  </form>
+                </div>
+                <div class="w3-half w3-padding-32">
+                  <i>Shipping details</i>
+                  <form class="w3-container">
+                    <label>Name</label>
+                    <input class="w3-input" type="text" />
+                    <label>Address</label>
+                    <input class="w3-input" type="text" />
+                    <label>City</label>
+                    <input class="w3-input" type="text" />
+                    <label>Post code</label>
+                    <input class="w3-input" type="text" />
+                    <label>Country</label>
+                    <select id="countries" class="w3-select" name="option">
+                      <option value="" disabled selected>
+                        Choose your country
+                      </option>
+                    </select>
+                  </form>
+                </div>
               </div>
-              <button class="w3-button w3-margin-top w3-red w3-right">
-                Add to cart <i class="fa fa-shopping-cart"></i>
-              </button>
-              <p>Remote controller<br /><b>$19.99</b></p>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="/images/tracker2.jpg"
-                  class="w3-hover-opacity"
-                  style="width: 100%"
-                />
+              <div class="w3-container">
+                <form class="w3-half">
+                  <i>Payment options</i>
+                  <p></p>
+                  <input
+                    id="online"
+                    class="w3-radio"
+                    type="radio"
+                    name="online"
+                    value="online"
+                    checked=""
+                  />
+                  <label>Online payment</label>
+                  <p>
+                    <input
+                      id="online"
+                      class="w3-radio"
+                      type="radio"
+                      name="online"
+                      value="bank"
+                      checked=""
+                    />
+                    <label>Bank transfer</label>
+                  </p>
+                </form>
+                <div class="w3-half w3-container">
+                  <div class="w3-right">
+                    <p class="w3-opacity">
+                      <i>Total: $2318.99</i>
+                    </p>
+                    <a
+                      href="/pay.html"
+                      class="w3-button w3-margin-top w3-red"
+                      style="width: 100%"
+                    >
+                      Pay
+                      <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <button class="w3-button w3-margin-top w3-red w3-right">
-                Add to cart <i class="fa fa-shopping-cart"></i>
-              </button>
-              <p>Power supply<br /><b>$19.99</b></p>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="/images/tracker3.jpg"
-                  class="w3-hover-opacity"
-                  style="width: 100%"
-                />
-              </div>
-              <button class="w3-button w3-margin-top w3-red w3-right">
-                Add to cart <i class="fa fa-shopping-cart"></i>
-              </button>
-              <p>Transfer box<br /><b>$19.99</b></p>
             </div>
           </div>
         </div>
+        <!-- End Page Content -->
       </div>
-      <!-- Manual section -->
-      <div
-        class="w3-container w3-content w3-padding-64"
-        style="max-width: 800px; min-height: 700px"
-        id="manual"
-      >
-        <h2 class="w3-wide w3-center">MANUAL</h2>
-        <p class="w3-opacity w3-center">
-          <i>Download the user manual here!</i>
-        </p>
-        <div class="w3-container w3-padding-32">
-          <div class="w3-half">
-            <p class="w3-center">
-              <i>English</i>
+      <!-- Cart page content-->
+      <div id="cart" style="display: none">
+        <!-- The Tour Section -->
+        <div class="w3-light-gray" id="tour">
+          <div
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 100%"
+          >
+            <h2 class="w3-wide w3-center">THE SHOPPING CART</h2>
+            <p class="w3-opacity w3-center">
+              <i>There are no elements in the cart</i>
             </p>
-            <p class="w3-center w3-hover-red">
-              <a href="pdf/lm386.pdf"
-                ><i
-                  class="fa fa-book"
-                  style="font-size: 60px"
-                  aria-hidden="true"
-                ></i>
-              </a>
-            </p>
-          </div>
-          <div class="w3-half">
-            <p class="w3-center">
-              <i>German</i>
-            </p>
-            <p class="w3-center w3-hover-red">
-              <a href="pdf/lm386.pdf"
-                ><i
-                  class="fa fa-book"
-                  style="font-size: 60px"
-                  aria-hidden="true"
-                ></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- The Contact Section -->
-      <div
-        class="w3-container w3-content w3-padding-64"
-        style="max-width: 800px; min-height: 720px"
-        id="contact"
-      >
-        <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center">
-          <i>You have a question? Feel free to mail us!</i>
-        </p>
-        <div class="w3-row w3-padding-32">
-          <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width: 30px"></i> Budapest, HU<br />
-            <i class="fa fa-envelope" style="width: 30px"></i>
-            <img
-              src="/images/mail.png"
-              class="w3-image w3-greyscale-min"
-              style="height: 24px"
-            /><br />
-            <i
-              class="fa fa-facebook-square"
-              style="width: 30px"
-              aria-hidden="true"
-            ></i>
-            <a
-              href="https://www.facebook.com/groups/764497804293915/?ref=share"
+            <br />
+            <div
+              class="w3-container w3-content"
+              style="max-width: 800px; min-height: 500px"
             >
-              www.facebook.com/triangulumastro</a
-            ><br />
-          </div>
-          <div class="w3-col m6">
-            <form action="/action_page.php" target="_blank">
-              <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
-                <div class="w3-half">
-                  <input
-                    class="w3-input w3-border"
-                    type="text"
-                    placeholder="Name"
-                    required
-                    name="Name"
+              <div class="w3-display-right"></div>
+              <div class="w3-display-left"></div>
+              <ul class="w3-ul w3-light-gray w3-card-4">
+                <li class="w3-bar">
+                  <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="w3-bar-item w3-button w3-xlarge w3-right"
+                    >&times;</span
+                  >
+                  <img
+                    src="/images/tracker1.jpg"
+                    class="w3-bar-item w3-circle"
+                    style="width: 85px"
                   />
-                </div>
-                <div class="w3-half">
-                  <input
-                    class="w3-input w3-border"
-                    type="text"
-                    placeholder="Email"
-                    required
-                    name="Email"
+                  <div class="w3-bar-item">
+                    <span class="w3-large">Remote controller</span><br />
+                    <span>$19.99</span>
+                  </div>
+                </li>
+                <li class="w3-bar">
+                  <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="w3-bar-item w3-button w3-xlarge w3-right"
+                    >&times;</span
+                  >
+                  <img
+                    src="/images/tracker1.jpg"
+                    class="w3-bar-item w3-circle"
+                    style="width: 85px"
                   />
-                </div>
-              </div>
-              <textarea
-                class="w3-input w3-border"
-                style="resize: none"
-                rows="10"
-                placeholder="Message"
-                required
-                name="Message"
-              ></textarea>
-              <button
-                class="w3-button w3-red w3-section w3-right"
-                type="submit"
+                  <div class="w3-bar-item">
+                    <span class="w3-large">Power supply</span><br />
+                    <span>$19.99</span>
+                  </div>
+                </li>
+                <li class="w3-bar">
+                  <span
+                    onclick="this.parentElement.style.display='none'"
+                    class="w3-bar-item w3-button w3-xlarge w3-right"
+                    >&times;</span
+                  >
+                  <img
+                    src="/images/tracker2.jpg"
+                    class="w3-bar-item w3-circle"
+                    style="width: 85px"
+                  />
+                  <div class="w3-bar-item">
+                    <span class="w3-large">Trinagulum astro</span><br />
+                    <span>$1999.99</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="w3-opacity w3-left">
+                <i>Subtotal: $2318.99</i>
+              </p>
+              <a
+                href="#checkout"
+                onclick="renderPage('checkout')"
+                class="w3-button w3-margin-top w3-red w3-right"
               >
-                SEND
-              </button>
-            </form>
+                Go to checkout
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- End Page Content -->
       </div>
+      <!-- Main page content -->
+      <div
+        id="main"
+        class="w3-content w3-light-gray"
+        style="max-width: 2000px; margin-top: 46px"
+      >
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+          <img src="/images/FB_IMG_1605350897091.jpg" style="width: 100%" />
+          <div
+            class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+          >
+            <h3>Triangulum Astro</h3>
+            <p><b>Catch the moment</b></p>
+          </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+          <img src="/images/FB_IMG_1605350901029.jpg" style="width: 100%" />
+          <div
+            class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+          >
+            <h3>Look at the sky</h3>
+            <p><b>Through the atmosphere</b></p>
+          </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+          <img src="/images/FB_IMG_1605350904084.jpg" style="width: 100%" />
+          <div
+            class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+          >
+            <h3>Get to know the universe</h3>
+            <p><b>And see unbelivable distances</b></p>
+          </div>
+        </div>
 
-      <!-- End Page Content -->
+        <!-- The Band Section -->
+        <div
+          class="w3-container w3-content w3-center w3-padding-64"
+          style="max-width: 1000px"
+          id="band"
+        >
+          <h2 class="w3-wide">THE TRIANGULUM ASTRO</h2>
+          <p class="w3-opacity"><i>Designed for the curiosity</i></p>
+          <p class="w3-justify">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="w3-row w3-padding-32">
+            <div class="w3-half">
+              <iframe
+                width="300"
+                height="225"
+                src="https://www.youtube.com/embed/hrTpNkVYYAU"
+              >
+              </iframe>
+            </div>
+            <div class="w3-half">
+              <iframe
+                width="300"
+                height="225"
+                src="https://youtube.com/embed/hrTpNkVYYAU"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="w3-row w3-padding-16">
+            <div class="w3-half w3-padding-16">
+              <img src="/images/FB_IMG_1605350958962.jpg" style="width: 90%" />
+            </div>
+            <div class="w3-half">
+              <p class="w3-opacity"><i>Lorem ipsum</i></p>
+              <p class="w3-justify">
+                We have created a fictional band website. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Tour Section -->
+        <div class="w3-black" id="gallery">
+          <div
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 800px"
+          >
+            <h2 class="w3-wide w3-center">GALLERY</h2>
+            <p class="w3-opacity w3-center">
+              <i>Experience the infinite</i>
+            </p>
+            <br />
+
+            <div
+              class="w3-row-padding w3-padding-32"
+              style="margin: 0 -16px"
+            ></div>
+          </div>
+        </div>
+        <!-- Image of location/map -->
+        <img
+          src="/images/FB_IMG_1605350938474.jpg"
+          class="w3-image w3-greyscale-min"
+          style="width: 100%"
+        />
+        <!-- Triangulum buy page-->
+        <div class="w3-black" id="triangulum">
+          <div
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 100%; min-height: 750px"
+          >
+            <h2 class="w3-wide w3-center">TRIANGULUM ASTRO</h2>
+            <br />
+
+            <div class="w3-container w3-content" style="max-width: 800px">
+              <div class="w3-display-container">
+                <img
+                  src="/images/FB_IMG_1605350901029.jpg"
+                  class="w3-hover-opacity"
+                  style="width: 100%"
+                />
+              </div>
+              <button
+                onclick="addToCart('platform')"
+                class="w3-button w3-margin-top w3-red w3-right"
+              >
+                Add to cart <i class="fa fa-shopping-cart"></i>
+              </button>
+              <p>Trinagulum astro<br /><b>$1999.99</b></p>
+            </div>
+          </div>
+        </div>
+        <!-- Accessories section -->
+        <div class="w3-black" id="accessories">
+          <div
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 100%; min-height: 750px"
+          >
+            <h2 class="w3-wide w3-center">ACCESSORIES</h2>
+            <p class="w3-opacity w3-center">
+              <i>Buy the accessories here</i>
+            </p>
+            <br />
+
+            <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img
+                    src="/images/tracker1.jpg"
+                    class="w3-hover-opacity"
+                    style="width: 100%"
+                  />
+                </div>
+                <button
+                  onclick="addToCart('remote')"
+                  class="w3-button w3-margin-top w3-red w3-right"
+                >
+                  Add to cart <i class="fa fa-shopping-cart"></i>
+                </button>
+                <p>Remote controller<br /><b>$19.99</b></p>
+              </div>
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img
+                    src="/images/tracker2.jpg"
+                    class="w3-hover-opacity"
+                    style="width: 100%"
+                  />
+                </div>
+                <button
+                  onclick="addToCart('supply')"
+                  class="w3-button w3-margin-top w3-red w3-right"
+                >
+                  Add to cart <i class="fa fa-shopping-cart"></i>
+                </button>
+                <p>Power supply<br /><b>$19.99</b></p>
+              </div>
+              <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                  <img
+                    src="/images/tracker3.jpg"
+                    class="w3-hover-opacity"
+                    style="width: 100%"
+                  />
+                </div>
+                <button
+                  onclick="addToCart('box')"
+                  class="w3-button w3-margin-top w3-red w3-right"
+                >
+                  Add to cart <i class="fa fa-shopping-cart"></i>
+                </button>
+                <p>Transfer box<br /><b>$19.99</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Manual section -->
+        <div
+          class="w3-container w3-content w3-padding-64"
+          style="max-width: 800px; min-height: 700px"
+          id="manual"
+        >
+          <h2 class="w3-wide w3-center">MANUAL</h2>
+          <p class="w3-opacity w3-center">
+            <i>Download the user manual here!</i>
+          </p>
+          <div class="w3-container w3-padding-32">
+            <div class="w3-half">
+              <p class="w3-center">
+                <i>English</i>
+              </p>
+              <p class="w3-center w3-hover-red">
+                <a href="pdf/lm386.pdf"
+                  ><i
+                    class="fa fa-book"
+                    style="font-size: 60px"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </p>
+            </div>
+            <div class="w3-half">
+              <p class="w3-center">
+                <i>German</i>
+              </p>
+              <p class="w3-center w3-hover-red">
+                <a href="pdf/lm386.pdf"
+                  ><i
+                    class="fa fa-book"
+                    style="font-size: 60px"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- The Contact Section -->
+        <div
+          class="w3-container w3-content w3-padding-64"
+          style="max-width: 800px; min-height: 720px"
+          id="contact"
+        >
+          <h2 class="w3-wide w3-center">CONTACT</h2>
+          <p class="w3-opacity w3-center">
+            <i>You have a question? Feel free to mail us!</i>
+          </p>
+          <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker" style="width: 30px"></i> Budapest,
+              HU<br />
+              <i class="fa fa-envelope" style="width: 30px"></i>
+              <img
+                src="/images/mail.png"
+                class="w3-image w3-greyscale-min"
+                style="height: 24px"
+              /><br />
+              <i
+                class="fa fa-facebook-square"
+                style="width: 30px"
+                aria-hidden="true"
+              ></i>
+              <a
+                href="https://www.facebook.com/groups/764497804293915/?ref=share"
+              >
+                www.facebook.com/triangulumastro</a
+              ><br />
+            </div>
+            <div class="w3-col m6">
+              <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+                  <div class="w3-half">
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      placeholder="Name"
+                      required
+                      name="Name"
+                    />
+                  </div>
+                  <div class="w3-half">
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      placeholder="Email"
+                      required
+                      name="Email"
+                    />
+                  </div>
+                </div>
+                <textarea
+                  class="w3-input w3-border"
+                  style="resize: none"
+                  rows="10"
+                  placeholder="Message"
+                  required
+                  name="Message"
+                ></textarea>
+                <button
+                  class="w3-button w3-red w3-section w3-right"
+                  type="submit"
+                >
+                  SEND
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Page Content -->
+      </div>
     </div>
 
     <!-- Footer -->
@@ -430,7 +627,7 @@
         <a href="" target="_blank">Laszlo Bulatko</a>
       </p>
       <div class="payment_methods">
-        <img
+        <!--<img
           src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
           alt="Amazon payments"
         />
@@ -469,13 +666,21 @@
         <img
           src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
           alt="Visa"
-        />
+        />-->
       </div>
     </footer>
 
     <script>
       // Automatic Slideshow - change image every 4 seconds
-      var myIndex = 0;
+      let myIndex = 0;
+      let cart = [];
+      const prices = {
+        remote: 9.9,
+        box: 19.9,
+        supply: 29.9,
+        platform: 2299.9,
+        usship: 300,
+      };
       carousel();
 
       function carousel() {
@@ -509,6 +714,40 @@
           modal.style.display = "none";
         }
       };
+
+      function renderPage(pageName) {
+        let pageContainer = document.getElementById("pages");
+        for(let i= 0; i<pageContainer.children.length; i++){
+          pageContainer.children[i].style.display = "none";
+        }
+        let newPage = document.getElementById(pageName);
+        newPage.style.display = "block";
+      }
+
+      function addToCart(itemName) {
+        if (prices[itemName] != undefined) {
+          cart.push({ name: itemName, price: prices.itemName });
+          refreshCartBadge();
+        } else {
+          console.log(itemName);
+        }
+      }
+      function refreshCartBadge() {
+        let badge = document.getElementById("badge");
+        const itemNumber = cart.length;
+        if (itemNumber == 0) {
+          badge.innerHTML = "";
+        } else {
+          badge.innerHTML = itemNumber;
+        }
+      }
+      function getTotalPrice() {
+        let totalPrice = 0;
+        cart.forEach((item) => {
+          totalPrice += item.price;
+        });
+        return totalPrice;
+      }
     </script>
   </body>
 </html>
