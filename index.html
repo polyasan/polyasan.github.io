@@ -350,7 +350,7 @@
       <!-- The Contact Section -->
       <div
         class="w3-container w3-content w3-padding-64"
-        style="max-width: 800px"
+        style="max-width: 800px; min-height: 720px"
         id="contact"
       >
         <h2 class="w3-wide w3-center">CONTACT</h2>
@@ -360,10 +360,22 @@
         <div class="w3-row w3-padding-32">
           <div class="w3-col m6 w3-large w3-margin-bottom">
             <i class="fa fa-map-marker" style="width: 30px"></i> Budapest, HU<br />
-            <i class="fa fa-phone" style="width: 30px"></i> Phone: +36 30 581
-            9524<br />
-            <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-            triangulumastro@gmail.com<br />
+            <i class="fa fa-envelope" style="width: 30px"></i>
+            <img
+              src="/images/mail.png"
+              class="w3-image w3-greyscale-min"
+              style="height: 24px"
+            /><br />
+            <i
+              class="fa fa-facebook-square"
+              style="width: 30px"
+              aria-hidden="true"
+            ></i>
+            <a
+              href="https://www.facebook.com/groups/764497804293915/?ref=share"
+            >
+              www.facebook.com/triangulumastro</a
+            ><br />
           </div>
           <div class="w3-col m6">
             <form action="/action_page.php" target="_blank">
@@ -387,13 +399,14 @@
                   />
                 </div>
               </div>
-              <input
+              <textarea
                 class="w3-input w3-border"
-                type="text"
+                style="resize: none"
+                rows="10"
                 placeholder="Message"
                 required
                 name="Message"
-              />
+              ></textarea>
               <button
                 class="w3-button w3-red w3-section w3-right"
                 type="submit"
