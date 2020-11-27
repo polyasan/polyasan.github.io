@@ -29,29 +29,39 @@
           title="Toggle Navigation Menu"
           ><i class="fa fa-bars"></i
         ></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a
+          href="#"
+          onclick="renderPage('main')"
+          class="w3-bar-item w3-button w3-padding-large"
+          >HOME</a
+        >
         <a
           href="#gallery"
+          onclick="renderPage('main')"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >GALLERY</a
         >
         <a
           href="#triangulum"
+          onclick="renderPage('main')"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >TRIANGULUM ASTRO</a
         >
         <a
           href="#accessories"
+          onclick="renderPage('main')"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >ACCESSORIES</a
         >
         <a
           href="#manual"
+          onclick="renderPage('main')"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >MANUAL</a
         >
         <a
           href="#contact"
+          onclick="renderPage('main')"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >CONTACT</a
         >
@@ -717,7 +727,7 @@
 
       function renderPage(pageName) {
         let pageContainer = document.getElementById("pages");
-        for(let i= 0; i<pageContainer.children.length; i++){
+        for (let i = 0; i < pageContainer.children.length; i++) {
           pageContainer.children[i].style.display = "none";
         }
         let newPage = document.getElementById(pageName);
