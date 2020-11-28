@@ -59,6 +59,9 @@ class Checkout extends React.Component {
       return value;
     }
   }
+  validateRequiredFields(){
+    
+  }
   onTextChange(event) {
     let senderName = event.target.name;
     let senderValue = event.target.value;
