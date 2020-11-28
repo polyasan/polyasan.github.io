@@ -1,6 +1,18 @@
 import React from "react";
 
 class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { navState: "" };
+    this.onHomeChange = this.onHomeChange.bind(this);
+  }
+  onHomeChange() {
+    if (this.state.navState === "") {
+      this.setState({ navState: "w3-show" });
+    } else {
+      this.setState({ navState: "" });
+    }
+  }
   render() {
     return (
       <div>
@@ -8,7 +20,7 @@ class Navbar extends React.Component {
           <div class="w3-bar w3-black w3-card">
             <button
               class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-              onclick="myFunction()"
+              onClick={this.onHomeChange}
               title="Toggle Navigation Menu"
             >
               <i class="fa fa-bars"></i>
@@ -85,48 +97,69 @@ class Navbar extends React.Component {
         </div>
         <div
           id="navDemo"
-          class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+          className={
+            this.state.navState +
+            " w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+          }
           style={{ marginTop: "46px" }}
         >
           <a
             href="#gallery"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("main");
+            }}
           >
             GALLERY
           </a>
           <a
             href="#triangulum"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("main");
+            }}
           >
             TRIANGULUM ASTRO
           </a>
           <a
             href="#accessories"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("main");
+            }}
           >
             ACCESSORIES
           </a>
           <a
             href="#manual"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("main");
+            }}
           >
             MANUAL
           </a>
           <a
             href="#contact"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("main");
+            }}
           >
             CONTACT
           </a>
           <a
-            href="/cart.html"
+            href="#cart"
             class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()"
+            onClick={() => {
+              this.onHomeChange();
+              this.props.rPage("cart");
+            }}
           >
             CART
           </a>
