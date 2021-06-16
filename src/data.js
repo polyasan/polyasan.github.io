@@ -14,7 +14,7 @@ module.exports = [
     title: "Work experience",
     blocks: [
       [
-        { label: "Dates", value: "January 2020 - present" },
+        { label: "Dates", value: "January 2020 - Present" },
         { label: "Position", value: "Full-stack Web Developer" },
         { label: "Employer", value: "Self-employed" },
         {
@@ -128,6 +128,23 @@ module.exports = [
           ],
         },
       ],
+    ],
+  },
+  {
+    title: "Languages",
+    blocks: [
+      [
+        {
+          label: "English",
+          value: "Good command, good working knowledge",
+        },
+      ],
+      [
+        {
+          label: "Hungarian",
+          value: "Native",
+        },
+      ]
     ],
   },
 ];
