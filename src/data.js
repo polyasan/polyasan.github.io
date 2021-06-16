@@ -35,6 +35,16 @@ module.exports = [
         },
       ],
       [
+        { label: "Dates", value: "May 2017 - February 2019" },
+        { label: "Position", value: "Lead software engineer" },
+        { label: "Employer", value: "Current, powered by GE" },
+        {
+          label: "Responsibilities",
+          value: `Embedded software development for wireless systems
+          Project integration, Team leading`,
+        },
+      ],
+      [
         { label: "Dates", value: "March 2015 - May 2017" },
         { label: "Position", value: "Embedded hardware engineer" },
         { label: "Employer", value: "Semilab Zrt." },
@@ -90,20 +100,13 @@ module.exports = [
     blocks: [
       [
         {
-          label: "Language",
-          value: `English (good command, good working knowledge)
-            Hungarian (native)`,
-        },
-      ],
-      [
-        {
           label: "Social skills",
           value: [
             "I can adapt fast to others",
             "I am goal oriented",
             "I have good problem-solving skills",
             "I have attention to details",
-            "I am open minded",
+            "I am open-minded",
             "I am always trying to improve myself",
           ],
         },
@@ -111,9 +114,10 @@ module.exports = [
       [
         {
           label: "Computer skills",
-          value: `React JS, Node JS, Mongo DB, MySQL, HTML, CSS, Javascript
-            Other: Visual Code Studio, Docker, Linux, OSX, AtomIO, Bootstrap,
-            NoSQL`,
+          value: [
+            "React JS, Node JS, Mongo DB, HTML, CSS, Vanilla JS",
+            "Other: VS code, Docker, Linux, OSX, AtomIO, Bootstrap, NoSQL",
+          ],
         },
       ],
       [
@@ -144,7 +148,7 @@ module.exports = [
           label: "Hungarian",
           value: "Native",
         },
-      ]
+      ],
     ],
   },
 ];
