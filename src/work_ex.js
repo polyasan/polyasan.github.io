@@ -9,7 +9,7 @@ function WorkExperience(props) {
       </h2>
       {props.data.blocks.map((item, index, arr) => {
         return (
-          <div className="w3-container">
+          <div key={index} className="w3-container">
             <h5 className="w3-opacity">
               <b>
                 {item[1].value} / {item[2].value}

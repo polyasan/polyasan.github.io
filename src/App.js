@@ -3,17 +3,37 @@ import "./App.css";
 import React, { useState } from "react";
 import WorkExperience from "./work_ex";
 import Education from "./education";
-import data from "./data";
 
 function App() {
-  const [color, setColor] = useState("w3-teal");
-  const [textColor, setTextColor] = useState("w3-text-teal");
+  const [state, setState] = useState({
+    color: "w3-teal",
+    textColor: "w3-text-teal",
+    colorChooser: [
+      "w3-cyan",
+      "w3-indigo",
+      "w3-light-blue",
+      "w3-blue",
+      "w3-gray",
+    ],
+  });
   const weData = cvData.find((item) => {
     return item.title === "Work experience";
   });
   const cvSkill = cvData.find((item) => {
     return item.title === "Skills and competences";
   });
+
+  function onColorChoosed(index) {
+    const newColor = state.colorChooser[index];
+    const newColorChooser = state.colorChooser;
+    newColorChooser.splice(index, 1, state.color);
+    const newTextColor = newColor.replace("w3", "w3-text");
+    setState({
+      color: newColor,
+      textColor: newTextColor,
+      colorChooser: newColorChooser,
+    });
+  }
   return (
     <div>
       <div className="w3-content w3-margin-top" style={{ maxWidth: "1400px" }}>
@@ -40,25 +60,25 @@ function App() {
               <div className="w3-container">
                 <p>
                   <i
-                    className={`fa fa-briefcase fa-fw w3-margin-right w3-large ${textColor}`}
+                    className={`fa fa-briefcase fa-fw w3-margin-right w3-large ${state.textColor}`}
                   ></i>
                   Electrical engineer
                 </p>
                 <p>
                   <i
-                    className={`fa fa-home fa-fw w3-margin-right w3-large ${textColor}`}
+                    className={`fa fa-home fa-fw w3-margin-right w3-large ${state.textColor}`}
                   ></i>
                   Budapest, HU
                 </p>
                 <p>
                   <i
-                    className={`fa fa-envelope fa-fw w3-margin-right w3-large ${textColor}`}
+                    className={`fa fa-envelope fa-fw w3-margin-right w3-large ${state.textColor}`}
                   ></i>
                   polyasan@gmail.com
                 </p>
                 <p>
                   <i
-                    className={`fa fa-phone fa-fw w3-margin-right w3-large ${textColor}`}
+                    className={`fa fa-phone fa-fw w3-margin-right w3-large ${state.textColor}`}
                   ></i>
                   +36 20 318 8166
                 </p>
@@ -66,22 +86,21 @@ function App() {
                 <p className="w3-large">
                   <b>
                     <i
-                      className={`fa fa-asterisk fa-fw w3-margin-right ${textColor}`}
+                      className={`fa fa-asterisk fa-fw w3-margin-right ${state.textColor}`}
                     ></i>
                     Skills
                   </b>
                 </p>
-                {cvSkill.blocks.map((item) => {
-                  console.log(item);
+                {cvSkill.blocks.map((item, blIndex) => {
                   return (
-                    <div>
-                      {item.map((sl) => {
+                    <div key={blIndex}>
+                      {item.map((sl, index) => {
                         return (
                           <>
-                            <h5 className="w3-opacity">
+                            <h5 className="w3-opacity" key={index}>
                               <b>{sl.label}</b>
                             </h5>
-                            <p class="w3-text-dark-gray">
+                            <p className="w3-text-dark-gray">
                               {Array.isArray(sl.value)
                                 ? sl.value.map((item) => {
                                     return (
@@ -103,7 +122,7 @@ function App() {
                 <p className="w3-large w3-text-theme">
                   <b>
                     <i
-                      className={`fa fa-globe fa-fw w3-margin-right ${textColor}`}
+                      className={`fa fa-globe fa-fw w3-margin-right ${state.textColor}`}
                     ></i>
                     Languages
                   </b>
@@ -111,30 +130,39 @@ function App() {
                 <h5 className="w3-opacity">
                   <b>English</b>
                 </h5>
-                <p class="w3-text-dark-gray">
+                <p className="w3-text-dark-gray">
                   Good command, good working knowledge
                 </p>
                 <h5 className="w3-opacity">
                   <b>Hungarian</b>
                 </h5>
-                <p class="w3-text-dark-gray">Native</p>
+                <p className="w3-text-dark-gray">Native</p>
                 <br />
               </div>
             </div>
             <br />
           </div>
           <div className="w3-twothird">
-            <WorkExperience textColor={textColor} color={color} data={weData} />
-            <Education textColor={textColor} color={color} />
+            <WorkExperience
+              textColor={state.textColor}
+              color={state.color}
+              data={weData}
+            />
+            <Education textColor={state.textColor} color={state.color} />
           </div>
         </div>
       </div>
-      <footer className="w3-container w3-teal w3-center w3-margin-top">
+      <footer className={`w3-container ${state.color} w3-center w3-margin-top`}>
         <p>Chose a color</p>
-        <span className="dot w3-pale-yellow"></span>
-        <span className="dot w3-light-blue"></span>
-        <span className="dot w3-blue"></span>
-        <span className="dot w3-gray"></span>
+        {state.colorChooser.map((item, index) => {
+          return (
+            <span
+              key={index}
+              className={`dot ${item}`}
+              onClick={() => onColorChoosed(index)}
+            ></span>
+          );
+        })}
         <p>
           Powered by{" "}
           <a href="polyasan.github.io" target="_blank">
